@@ -46,4 +46,8 @@ module.exports = {
         res.status(500).send(err);
       });
   },
+
+  loader: (req, res) => {
+    res.status(200).send('loaderio-15d5975ca9e8c2c778c0deae7dab52dd');
+  },
 };

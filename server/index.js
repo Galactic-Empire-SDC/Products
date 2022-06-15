@@ -18,6 +18,8 @@ app.get('/products/:product_id/styles', controller.getStyles);
 
 app.get('/products/:product_id/related', controller.getRelated);
 
+app.get('/loaderio-15d5975ca9e8c2c778c0deae7dab52dd', controller.loader);
+
 app.listen(process.env.PORT);
 
 // 3 tests
