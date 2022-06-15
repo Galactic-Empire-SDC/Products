@@ -87,6 +87,18 @@ FROM '/Users/leiaharlow/Desktop/products/skus.csv'
 DELIMITER ','
 CSV HEADER;
 
+CREATE INDEX productIndex ON product (id);
+
+CREATE INDEX stylesIndex ON styles (product_id);
+
+CREATE INDEX featuresIndex ON features (product_id);
+
+CREATE INDEX relatedIndex ON related (current_product_id);
+
+CREATE INDEX photosIndex ON photos (styleId);
+
+CREATE INDEX skusIndex ON skus (styleId);
+
 
 
 
